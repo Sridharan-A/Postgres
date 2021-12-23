@@ -15,7 +15,6 @@ public class Postgres {
             //String user = System.getenv("MYSQL_DB_USERNAME");
             //String password = System.getenv("MYSQL_DB_PASSWORD");
 
-
             Connection connect = DriverManager.getConnection(url,"hari","ponsmahi1");
             if(!connect.equals(false)) {
                 System.out.println("connection success");

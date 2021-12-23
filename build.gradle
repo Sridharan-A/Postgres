@@ -2,7 +2,8 @@ plugins {
     id 'java'
     id 'application'
 }
-mainClassName = 'org.postgres.Postgres'
+
+mainClassName='org.postgres.Postgres'
 jar {
     manifest {
         attributes(
@@ -18,5 +19,8 @@ repositories{
 
 dependencies {
 // https://mvnrepository.com/artifact/org.postgresql/postgresql
-  implementation 'org.postgresql:postgresql:42.3.1'
+    //implementation 'org.postgresql:postgresql:42.3.1'
+
+// https://mvnrepository.com/artifact/org.postgresql/postgresql
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.3.1'
 }
