@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+mainClassName = 'org.postgres.Postgres'
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'org.postgres.Postgres'
+        )
+    }
+}
+sourceCompatibility=1.8
+targetCompatibility=1.8
+repositories{
+    mavenCentral()
+}
+
+dependencies {
+// https://mvnrepository.com/artifact/org.postgresql/postgresql
+  implementation 'org.postgresql:postgresql:42.3.1'
+}
